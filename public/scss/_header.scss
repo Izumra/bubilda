@@ -58,19 +58,7 @@ header {
         align-items: center;
     }
 
-    .account-block {
-            &__log-out {
-            margin-left: 20px;
-            width: 80px;
-            height: 30px;
-            border-radius: 6px;
-            border: none;
-
-            color: black;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400px;
-        }
-        
+    .account-block {      
 
         &__log-in,&__log-out {
             border-radius: 6px;
@@ -78,7 +66,7 @@ header {
             color: black;
             font-family: 'Roboto', sans-serif;
             font-weight: 400px;
-
+            margin-left: 30px;
         }
 
         &__avatar {
