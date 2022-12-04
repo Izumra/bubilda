@@ -12,7 +12,9 @@
         <main>
             <?php require('app/header.php');?>
 
-            <!-- <section class="waits-zapusk">
+
+
+            <section class="nezavisimaya-expertiza">
                 <div class="container">
                     <div class="events__list">
                         <div class="events__item event-item">
@@ -29,25 +31,20 @@
                                     <div class="inform__body">Дата проведения: <span class="inform__dateFromBase">12.06.2022 - 29.07.2022</span></div>
                                 </div>
                         </div>
-                    </div>
-                    </div>
-                </div>
-            </section> -->
+                        <div class="events__title title">Заявки</div>
+                        <div class="appeals">
+                            <?php 
+                                require_once('app/include/db_connect.php');
 
-
-            <section class="nezavisimaya-expertiza">
-                <div class="container">
-                    <div class="events__list">
-                        <div class="events__item event-item">
-                            <div class="event-item__body">
-                                <div class="event-item__label">Развитие спорта в Оренбургской области</div>
-                            </div>
-                        <div class="event-item__info">
-                            <div class="event-item__status">Статус: <span></span></div>
-                        </div>
-                        <div class="participant">
-                            <div class="participant__title">Безотходное производство бумаги</div>
-                            <div class="participant__name">Пуговкин  М. Л.</div>
+                                $query = "SELECT * FROM `appeals`";
+                                $result = mysqli_query($connect, $query);
+                            
+                                while( $contest = mysqli_fetch_assoc($result)){?>
+                                    <div class="participant">
+                                        <div class="participant__title"><?=$contest['theme'] ?></div>
+                                        <div class="participant__name"><?=$contest['surname'] .' '. $contest['firstname'].' '. $contest['lastname']?></div>
+                                    </div>
+                            <?php }?>
                         </div>
                     </div>
                     </div>
