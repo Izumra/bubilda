@@ -1,0 +1,5 @@
+
+@mixin adaptiv-value($indentType, $pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	#{$indentType}: calc(#{$mobSize + px} + #{$addSize} * ((100vw - #{$minWidth+px}) / #{$maxWidth - $minWidth}));
+}

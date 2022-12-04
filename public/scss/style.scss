@@ -1,0 +1,59 @@
+@import "_variables";
+@import "_null";
+@import "_mixins";
+@import "_fonts";
+@import "_header";
+@import "_popup";
+@import "_events";
+@import "_waiting";
+@import "_footer";
+
+html{
+    height: 100%;
+}
+body{
+    background-color: $bg;
+    height: 100%;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+main{
+    flex:1 0 auto;
+}
+.container{
+    max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+.logo{
+    font-size: 40px;
+    font-family: 'Milonga';
+    color: black;
+    &:visited{
+        color: black;
+    }
+}
+.btn{
+    padding: 3px 30px;
+    border-radius: 20px;
+    color: $textBlue;
+    font-size: 20px;
+    background-color: #DDEDED;
+}
+.form-btn{
+    color: black;
+    padding: 8px 55px;
+    border-radius: 10px;
+    font-size: 24px;
+    &:hover{
+        background-color: #DCEBF0;
+    }
+}
+input{
+    font-size: 22px;
+    color: #9B9999;
+    padding: 7px 8px;
+}

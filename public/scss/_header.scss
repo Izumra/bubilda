@@ -1,0 +1,165 @@
+// .header{
+//     padding: 10px 0;
+//     background-color: $header;
+//     .container{
+//         display: flex;
+//         align-items: center;
+//     }
+//     &__logo{
+//         margin-right: 50px;
+//     }
+//     &__search{
+//         flex: 1 0 auto;
+//         border-radius: 5px;
+//     }
+//     &__login-btn{
+//     }
+    
+// }
+// .magnifying-glass {
+//     position: relative;
+    
+//     width: 100px;
+//     height: 100px; 
+    
+//     box-sizing: border-box;
+//     background-color: aliceblue;
+    
+//     border: 15px solid slategray;
+//     border-radius: 50%;
+//     &::after{
+//         content: "";
+//         position: absolute;
+//         bottom: 0;
+//         right: 0;
+        
+//         width: 50px;
+//         height: 15px;
+//         background-color: slategray;
+        
+//         border-radius: 0 7.5px 7.5px 0;
+        
+//         transform-origin: 0 50%;
+//         transform: translateX(100%) rotate(45deg);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Milonga&family=Roboto:wght@300;400;500&display=swap');
+
+
+
+.wrapperBody {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    min-height: 60px;
+    max-height: 60px;
+    background-color: #84A9C0;
+}
+
+.header-content {
+    max-width: 1145px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &__search-block {
+        width: 460px;
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif;
+
+        div,
+        input {
+            width: max-content;
+        }
+    }
+
+    .search-block {
+        &__logo {
+            font-family: 'Milonga', cursive;
+            font-size: 36px;
+            color: black;
+            font-weight: 600;
+        }
+
+        &__search {
+            height: 30px;
+            border-radius: 6px;
+            border: none;
+            margin-top: 5px;
+            padding-left: 10px;
+        }
+    }
+
+    &__account-block {
+        min-width: 260px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .account-block {
+        &__log-out {
+            width: 80px;
+            height: 30px;
+            border-radius: 6px;
+            border: none;
+            margin-top: 6px;
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400px;
+        }
+        
+
+        &__log-in {
+            width: 80px;
+            height: 30px;
+            border-radius: 6px;
+            border: none;
+            margin-top: 6px;
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400px;
+        }
+
+        &__avatar {
+            width: 46px;
+            height: 46px;
+            border-radius: 100%;
+            background-color: #D9D9D9;
+        }
+
+        &__user-name {
+            height: 30px;
+            border-radius: 6px;
+            border: none;
+            margin-top: 18px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400px;
+        }
+    }
+
+}
