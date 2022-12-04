@@ -14,15 +14,24 @@
             <section class="events">
                 <div class="container">
                     <div class="events__list">
-                        <div class="events__item event-item">
-                            <div class="event-item__body">
-                                <div class="event-item__label">Развитие спорта в Оренбургской области</div>
-                            </div>
-                            <div class="event-item__info">
-                                <div class="event-item__status">Статус: <span></span></div>
-                                <a href="contest.php?id=1" class="event-item__details-btn btn">Подробнее</a>
-                            </div>
-                        </div>
+                        <?php 
+                            require_once('app/include/db_connect.php');
+
+                            $query = "select * from `contests`";
+                            $result = mysqli_query($connect, $query);
+                        
+                            while( $contest = mysqli_fetch_assoc($result)){?>
+                                <div class="events__item event-item">
+                                    <div class="event-item__body">
+                                        <div class="event-item__label"><?=$contest['title']?></div>
+                                    </div>
+                                    <div class="event-item__info">
+                                        <div class="event-item__status">Статус: <span><?=$contest['status']?></span></div>
+                                        <a href="contest.php?id=<?=$contest['id']?>" class="event-item__details-btn btn">Подробнее</a>
+                                    </div>
+                                </div>
+                        <?php }?>
+                        
                         
                     </div>
                 </div>

@@ -2,7 +2,7 @@
     <div class="header-content">
         <div class="header-content__search-block">
             <a href="/" class="search-block__logo">OrgEvent</a>
-            <input class="search-block__search" type="text" value="Поиск">
+            <input class="search-block__search" type="text" placeholder="Поиск">
         </div>
         <div class="header-content__account-block">
         <?php if($_COOKIE['user-email'] == ''):?>
