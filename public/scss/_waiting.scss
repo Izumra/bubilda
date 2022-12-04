@@ -1,16 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Milonga&family=Roboto:wght@300;400;500&display=swap');
 .content-description{
     width:100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 18px;
 }
 .description{
     background-color: #FFF4F4;
-    width:400px;
-    height:600px;
+    max-width:600px;
+    border-radius: 12px;
+    padding: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    color:#16425B;
 }
 .inform{
     background-color: #FFF4F4;
     width:160px;
-    height:300px;
+    height:200px;
+    border-radius: 12px;
+    padding: 8px;
+    color: #16425B;
+    &__title{
+        width: min-content;
+        margin: 0 auto;
+        text-decoration-line: underline;
+        margin-bottom: 8px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: #16425B;
+    }
+    &__body{
+        margin-top: 15px;
+    }
+    &__dateFromBase{
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #16425B;
+    }
 }
