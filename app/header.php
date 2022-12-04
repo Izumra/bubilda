@@ -12,7 +12,7 @@
                     <button class="dropbtn account-block__user-name"><?= $_COOKIE['user-surname'] .' '. $_COOKIE['user-name']; ?></button>
                     <div class="dropdown-content">
                         <a href="#">Мои конкурсы</a>
-                        <a href="#">Объявить конкурс</a>
+                        <a class="create-contest-btn" href="#">Объявить конкурс</a>
                         <a href="app/include/exit.php" class="account-block__log-out">Выйти</a>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
     </form>
 </div>
 
-<div class="popup _active" id="create-contest" >
+<div class="popup " id="create-contest" >
     <div class="popup__bg"></div>
     <form class="popup__content" action="app/include/auth.php" method="post">
         <button type="button" class="popup__close">&#10006;</button>
@@ -60,7 +60,3 @@
         <button type="submit" class="popup__btn form-btn" name="login-btn">Добавить</button>
     </form>
 </div>
-
-title
-descr
-date

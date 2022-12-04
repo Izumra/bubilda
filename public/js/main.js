@@ -1,12 +1,12 @@
 window.onload = () => {
     //вход
     const loginShowBtn = document.querySelector('.account-block__log-in')
-    const loginPopup = document.querySelector('#login-popup')
-    const loginCloseBtn = loginPopup.querySelector('.popup__close')
-    const loginBg = loginPopup.querySelector('.popup__bg')
-
+    
     if (loginShowBtn){
-
+        
+        const loginPopup = document.querySelector('#login-popup')
+        const loginCloseBtn = loginPopup.querySelector('.popup__close')
+        const loginBg = loginPopup.querySelector('.popup__bg')
         loginShowBtn.addEventListener('click', function(){
             loginPopup.classList.add('_active')
         })
@@ -34,12 +34,30 @@ window.onload = () => {
         regBg.addEventListener('click', function(){
             regPopup.classList.remove('_active')
         })
+
+        
     }
     else {
         //выход
         const logoutBtn = document.querySelector('.account-block__log-out')
         logoutBtn.addEventListener('click', function(){
             console.log(document.cookie)
+        })
+
+        //организовать конкурс
+        const createContestBtn = document.querySelector('.create-contest-btn')
+        const createContestPopup = document.querySelector('#create-contest')
+        const createContestClosePopup=createContestPopup.querySelector('.popup__close')
+        const createContestBg=createContestPopup.querySelector('.popup__bg')
+
+        createContestBtn.addEventListener('click', function(){
+            createContestPopup.classList.add('_active')
+        })
+        createContestClosePopup.addEventListener('click', function(){
+            createContestPopup.classList.remove('_active')
+        })
+        createContestBg.addEventListener('click', function(){
+            createContestPopup.classList.remove('_active')
         })
     }
 
