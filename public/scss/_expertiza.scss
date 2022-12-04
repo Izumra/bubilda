@@ -1,0 +1,26 @@
+.participant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background-color: #FFF4F4;
+    margin-top: 18px;
+    border-radius: 14px;
+    &__title, &__name{
+        font-size: 20px;
+        color:#16425B;
+        font-family:'Roboto', sans-serif;
+    }
+}
+.participant{
+
+    &:hover{
+        background-color: #7CA2BD;
+        border: 2px solid black;
+        color:#ffff;
+        .participant__title,
+        .participant__name{
+            color:#ffff;
+        }
+    }
+}

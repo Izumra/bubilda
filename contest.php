@@ -45,7 +45,10 @@
                         <div class="event-item__info">
                             <div class="event-item__status">Статус: <span></span></div>
                         </div>
-                        
+                        <div class="participant">
+                            <div class="participant__title">Безотходное производство бумаги</div>
+                            <div class="participant__name">Пуговкин  М. Л.</div>
+                        </div>
                     </div>
                     </div>
                 </div>
