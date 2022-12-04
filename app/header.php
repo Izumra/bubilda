@@ -8,11 +8,18 @@
         <?php if($_COOKIE['user-email'] == ''):?>
             <button class="account-block__log-in form-btn">Войти</button>
             <?php else: ?>
-                <div class="account-block__user-name"><?= $_COOKIE['user-surname'] .' '. $_COOKIE['user-name']; ?></div>
-                <a class="link-btn" href="app/include/exit.php">
-                    <button class="account-block__log-out form-btn">Выйти</button>
-                </a>
+                <div class="dropdown">
+                    <button class="dropbtn account-block__user-name"><?= $_COOKIE['user-surname'] .' '. $_COOKIE['user-name']; ?></button>
+                    <div class="dropdown-content">
+                        <a href="#">Мои конкурсы</a>
+                        <a href="#">Объявить конкурс</a>
+                        <a href="app/include/exit.php" class="account-block__log-out">Выйти</a>
+                    </div>
+                </div>
+                
+                
             <?php endif;?>
         </div>
     </div>
 </header>
+
