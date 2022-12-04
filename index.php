@@ -64,6 +64,30 @@
                     <button class="popup__reg-btn">Нет аккаунта?</button>
                 </form>
             </div>
+
+            <div class="popup" id="login-popup">
+                <div class="popup__bg"></div>
+                <form class="popup__content" action="app/include/auth.php" method="post">
+                    <button type="button" class="popup__close">&#10006;</button>
+                    <h3 class="popup__title logo">OrgEvent</h3>
+                    <input type="email" name="email" class="popup__input" placeholder="Email" required>
+                    <input type="password" name="password" class="popup__input" placeholder="Пароль" required>
+                    <button type="submit" class="popup__btn form-btn" name="login-btn">Войти</button>
+                    <button class="popup__reg-btn">Нет аккаунта?</button>
+                </form>
+            </div>
+
+            <div class="popup" id="create-event">
+                <div class="popup__bg"></div>
+                <form class="popup__content" action="app/include/auth.php" method="post">
+                    <button type="button" class="popup__close">&#10006;</button>
+                    <h3 class="popup__title logo">OrgEvent</h3>
+                    <input type="email" name="email" class="popup__input" placeholder="Email" required>
+                    <input type="password" name="password" class="popup__input" placeholder="Пароль" required>
+                    <button type="submit" class="popup__btn form-btn" name="login-btn">Войти</button>
+                    <button class="popup__reg-btn">Нет аккаунта?</button>
+                </form>
+            </div>
         </main>
         <?php require('app/footer.php');?> 
        <script src="public/js/main.js"></script>
