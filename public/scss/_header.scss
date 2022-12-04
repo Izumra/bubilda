@@ -72,14 +72,13 @@ header {
         }
         
 
-        &__log-in {
-            width: 80px;
+        &__log-in,&__log-out {
             border-radius: 6px;
             border: none;
-            margin-top: 6px;
             color: black;
             font-family: 'Roboto', sans-serif;
             font-weight: 400px;
+
         }
 
         &__avatar {

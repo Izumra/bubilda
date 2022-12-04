@@ -6,11 +6,11 @@
         </div>
         <div class="header-content__account-block">
         <?php if($_COOKIE['user-email'] == ''):?>
-            <button class="account-block__log-in">Войти</button>
+            <button class="account-block__log-in form-btn">Войти</button>
             <?php else: ?>
                 <div class="account-block__user-name"><?= $_COOKIE['user-surname'] .' '. $_COOKIE['user-name']; ?></div>
                 <a class="link-btn" href="app/include/exit.php">
-                    <button class="account-block__log-out">Выйти</button>
+                    <button class="account-block__log-out form-btn">Выйти</button>
                 </a>
             <?php endif;?>
         </div>
