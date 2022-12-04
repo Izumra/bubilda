@@ -13,6 +13,7 @@
             <?php require('app/header.php'); ?>
             <section class="events">
                 <div class="container">
+                    <h2 class="title">Список конкурсов</h2>
                     <div class="events__list">
                         <?php 
                             require_once('app/include/db_connect.php');
@@ -36,34 +37,6 @@
                     </div>
                 </div>
             </section>
-        
-        
-        
-            <div class="popup" id="reg-popup">
-                <div class="popup__bg"></div>
-                <form class="popup__content" action="app/include/reg.php" method="post">
-                    <button type="button" class="popup__close">&#10006;</button>
-                    <h3 class="popup__title logo">OrgEvent</h3>
-                    <input type="text" name="surname" class="popup__input" placeholder="Фамилия" required>
-                    <input type="text" name="firstname" class="popup__input" placeholder="Имя" required>
-                    <input type="text" name="lastname" class="popup__input" placeholder="Отчество" required>
-                    <input type="email" name="email" class="popup__input" placeholder="Email" required>
-                    <input type="password" name="password" class="popup__input" placeholder="Пароль" required>
-                    <button type="submit" class="popup__btn form-btn" name="reg-btn" >Регистрация</button>
-                </form>
-            </div>
-        
-            <div class="popup" id="login-popup">
-                <div class="popup__bg"></div>
-                <form class="popup__content" action="app/include/auth.php" method="post">
-                    <button type="button" class="popup__close">&#10006;</button>
-                    <h3 class="popup__title logo">OrgEvent</h3>
-                    <input type="email" name="email" class="popup__input" placeholder="Email" required>
-                    <input type="password" name="password" class="popup__input" placeholder="Пароль" required>
-                    <button type="submit" class="popup__btn form-btn" name="login-btn">Войти</button>
-                    <button class="popup__reg-btn">Нет аккаунта?</button>
-                </form>
-            </div>
         </main>
         <?php require('app/footer.php');?> 
        <script src="public/js/main.js"></script>
