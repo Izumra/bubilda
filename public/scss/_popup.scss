@@ -45,6 +45,7 @@
         &:not(:last-child){
             margin-bottom: 20px;
         }
+        
     }
 
     &__btn {
@@ -68,4 +69,13 @@
         background-color: transparent;
         font-size: 30px;
     }
+}
+.holder{
+    padding: 10px;
+    font-size: 18px;
+    resize: none;
+    outline: none;
+}
+.holder::-webkit-scrollbar{
+    width:0
 }
